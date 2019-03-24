@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Science Trivia</title>
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+</head>
+
+<body>
+    <container class="content">
+        <div class="row" id="topbar-row">
+            <div class="col-12" id="topbar-col">
+                <h1>Science Rules</h1>
+            </div>
+        </div>
+        <div class="row" id="question-row">
+            <div class="col-12" id="question-col">
+                <h3 id="question"></h3>
+            </div>
+        </div>
+        <div class="row" id="answers-row">
+            <div class="col-12" id="answers-col">
+
+            </div>
+        </div>
+        <div class="row" id="timer-row">
+            <div class="col-12" id="timer-col">
+                <progress id="timer-bar" value="0"></progress>
+                
+            </div>
+        </div>
+        <div class="row" id="score-row">
+            <div class="col-4">
+                <h5 id=correct-q-div></h5>
+            </div>
+            <div class="col-4">
+                <h5 id="current-q-div"></h5>
+            </div>
+            <div class="col-4">
+                <h5 id="incorrect-q-div"></h5>
+            </div>
+        </div>
+    </container>
+
+    <script src="./assets/javascript.js"></script>
+</body>
