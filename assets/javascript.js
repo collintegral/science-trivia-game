@@ -131,5 +131,5 @@ function answerCountdown() {
 function results() {
     question.text("All questions have been answered. You correctly answered " + correctQ + " questions out of " + totalQ + ". You missed " + incorrectQ + ". Would you like to play again?");
     answersCol.empty();
-    answersCol.append(startButton).one("click", startGame);
+    answersCol.append(startButton.one("click", startGame));
 }
