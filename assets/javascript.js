@@ -111,7 +111,7 @@ function questionCountdown() {
 }
 
 function answerCountdown() {
-    currentSeconds = 0;
+    currentSeconds = 1;
     timerBar.attr("max", secondsA).attr("value", currentSeconds);
     aBar = setInterval(function() {
         currentSeconds++;
