@@ -3,7 +3,7 @@ var qBar, aBar, currentSeconds = secondsQ;
 var correctQDiv = $("#correct-q-div"), incorrectQDiv = $("#incorrect-q-div"), currentQDiv = $("#current-q-div");
 var question = $("#question").text("Click the button below to begin the trivia session. You will have " + secondsQ + " seconds to answer each question. There will be " + totalQ + " questions. Be quick, be smart!");
 var ans1 = $("<h4 num=1>"), ans2 = $("<h4 num=2>"), ans3 = $("<h4 num=3>"), ans4 = $("<h4 num=4>"), answers = [ans1, ans2, ans3, ans4];
-var startButton = $("<button>").text("Start the Trivia!").on("click", startGame);
+var startButton = $("<button>").text("Start the Trivia!").one("click", startGame);
 var timerBar = $("#timer-bar").attr("value", secondsQ).attr("max", secondsQ);
 
 var answersCol = $("#answers-col").append(startButton);
@@ -131,5 +131,5 @@ function answerCountdown() {
 function results() {
     question.text("All questions have been answered. You correctly answered " + correctQ + " questions out of " + totalQ + ". You missed " + incorrectQ + ". Would you like to play again?");
     answersCol.empty();
-    answersCol.append(startButton);
+    answersCol.append(startButton).one("click", startGame);
 }
