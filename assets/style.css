@@ -23,6 +23,10 @@ progress {
     width: 85%;
 }
 
+h4 {
+    cursor: pointer;
+}
+
 .content {
     max-width: 92%;
     margin: 0 auto;
